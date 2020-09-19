@@ -1,4 +1,4 @@
-/* This folder woks in conjuction with variables.tf, variables.tfvars
+/* This folder works in conjuction with variables.tf, variables.tfvars
 output.tf and vpc.tf */
 
 # provider info. Region set in variables.tf folder
