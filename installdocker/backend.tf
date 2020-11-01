@@ -1,17 +1,4 @@
-
-/*terraform {
-    backend "remote" {
-        hostname = "app.terraform.io"
-        organization = "kachi"
-
-        workspaces {
-            name = "kachi3"
-        }
-    }
-}*/
-
-
-
+#Remote backend used in order to ensure accessibility on any machine
 terraform {
   backend "s3" {
     bucket = "kashbucket860"
