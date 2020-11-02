@@ -1,0 +1,1 @@
+This folder visits certain bash automation concepts such as condition statements, loops and variables. They are simple scripts
