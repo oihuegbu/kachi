@@ -1,1 +1,10 @@
+version: 0.2
+
+
+phases:
+  build:
+    commands:
+      - echo Entered the build phase...
+    finally:
+      - echo This always runs even if the install command fails
 
