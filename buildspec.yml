@@ -6,6 +6,12 @@ phases:
     commands:
       - echo Entered the build phase...
       - ls -al
+      - touch text.txt
+      - echo "sample content for text file" > text.txt
     finally:
       - echo This always runs even if the install command fails
+
+artifacts:
+  files:
+    - "text.txt"
 
