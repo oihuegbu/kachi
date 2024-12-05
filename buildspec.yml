@@ -6,9 +6,9 @@ phases:
     commands:
       - echo Entered the build phase...
       - apt-get update -y
-      - sudo apt install nodejs
-      - sudo apt install npm
-      - npm install -g aws-cdk
+      - sudo apt install nodejs -y
+      - sudo apt install npm -y
+      - npm install -g aws-cdk -y
       - cdk version
     finally:
       - echo This always runs even if the install command fails
