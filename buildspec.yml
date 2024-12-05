@@ -10,6 +10,10 @@ phases:
       - sudo apt install npm -y
       - npm install -g aws-cdk -y
       - cdk version
+      - import * as cdk from 'aws-cdk-lib';
+      - import { Construct } from 'constructs';
+      - import * as s3 from 'aws-cdk-lib/aws-s3';
+      - import { RemovalPolicy } from 'aws-cdk-lib';
     finally:
       - echo This always runs even if the install command fails
 
