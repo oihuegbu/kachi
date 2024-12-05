@@ -5,9 +5,11 @@ phases:
   build:
     commands:
       - echo Entered the build phase...
-      - ls -al
-      - touch text.txt
-      - echo "sample content for text file" > text.txt
+      - apt-get update -y
+      - sudo apt install nodejs
+      - sudo apt install npm
+      - npm install -g aws-cdk
+      - cdk version
     finally:
       - echo This always runs even if the install command fails
 
